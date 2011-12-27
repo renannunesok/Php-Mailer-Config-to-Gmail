@@ -37,8 +37,10 @@ $mail->IsHTML(true); // Define que o e-mail será enviado como HTML
 // Define a mensagem (Texto e Assunto)
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $mail->Subject  = "Mensagem Teste"; // Assunto da mensagem
-$mail->Body = "Este é o corpo da mensagem de teste, em <b>HTML</b>! <br /> <img src='http:/blog.thiagobelem.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley'> ";
-$mail->AltBody = "Este é o corpo da mensagem de teste, em Texto Plano! \r\n <img src='http:/blog.thiagobelem.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley'> ";
+$mail->Body = "Este é o corpo da mensagem de teste, em <b>HTML</b>! <br /> 
+    <img src='http:/blog.thiagobelem.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley'> ";
+$mail->AltBody = "Este é o corpo da mensagem de teste, em Texto Plano! \r\n 
+    <img src='http:/blog.thiagobelem.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley'> ";
 
 // Define os anexos (opcional)
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -54,9 +56,9 @@ $mail->ClearAttachments();
 // Exibe uma mensagem de resultado
 if ($enviado) {
 	echo "E-mail enviado com sucesso!";
-	} else {
-		echo "Não foi possível enviar o e-mail.<br /><br />";
-		echo "<b>Informações do erro:</b> <br />" . $mail->ErrorInfo;
+}else{
+	echo "Não foi possível enviar o e-mail.<br /><br />";
+	echo "<b>Informações do erro:</b> <br />" . $mail->ErrorInfo;
 }
 
 ?>
