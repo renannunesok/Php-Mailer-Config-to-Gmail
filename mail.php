@@ -54,9 +54,9 @@ $mail->ClearAttachments();
 // Exibe uma mensagem de resultado
 if ($enviado) {
 	echo "E-mail enviado com sucesso!";
-	} else {
-		echo "Não foi possível enviar o e-mail.<br /><br />";
-		echo "<b>Informações do erro:</b> <br />" . $mail->ErrorInfo;
+}else{
+	echo "Não foi possível enviar o e-mail.<br /><br />";
+	echo "<b>Informações do erro:</b> <br />" . $mail->ErrorInfo;
 }
 
 ?>
