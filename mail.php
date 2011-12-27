@@ -1,4 +1,5 @@
 <?php
+	
 // Inclui o arquivo class.phpmailer.php localizado na pasta phpmailer
 require("phpmailer/class.phpmailer.php");
 
@@ -59,4 +60,5 @@ if ($enviado) {
 	echo "Não foi possível enviar o e-mail.<br /><br />";
 	echo "<b>Informações do erro:</b> <br />" . $mail->ErrorInfo;
 }
+
 ?>
